@@ -1,0 +1,15 @@
+{% extends 'todo_app/base.html' %}
+
+{% block title %} TODO {% endblock %}
+{% block content %}
+    <div class="container my-5">
+        <div class="p-5 text-center bg-body-tertiary rounded-3">
+            <h1 class="text-body-emphasis">TODO</h1>
+            <p class="lead">
+                There is allways something to do.
+            </p>
+            <a type="button" class="btn btn-outline-success" href="{% url 'create' %}">Crate New To Do</a>
+        </div>
+    </div>
+
+{% endblock %}

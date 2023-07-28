@@ -1,0 +1,28 @@
+{% extends 'todo_app/base.html' %}
+
+{% block title %} TODO {% endblock %}
+{% block content %}
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
+      </symbol>
+    </svg>
+    <div class="container my-5">
+  <div class="p-5 text-center bg-success-subtle rounded-3">
+    <svg class="bi mt-4 mb-3" style="color: var(--bs-indigo);" width="100" height="100"><use xlink:href="#check2"></use></svg>
+    <h1 class="text-body-emphasis"></h1>
+    <p class="col-lg-8 mx-auto fs-5 text-muted">
+      This application was developed in django.
+    </p>
+    <div class="d-inline-flex gap-2 mb-5">
+      <button class="d-inline-flex align-items-center btn btn-primary btn-lg px-4 rounded-pill" type="button">
+        Call to action &nbsp
+        <i class="bi bi-arrow-up-right-circle-fill fs-3"></i>
+      </button>
+      <button class="btn btn-outline-secondary btn-lg px-4 rounded-pill" type="button">
+        Secondary link
+      </button>
+    </div>
+  </div>
+</div>
+{% endblock %}
